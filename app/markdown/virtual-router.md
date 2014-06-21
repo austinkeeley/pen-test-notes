@@ -56,6 +56,7 @@ Fortunately, we can build a virtual router pretty quickly.
         }
 
 7. Assign your router a static IP
+
         ifconfig eth1 up 192.168.3.1 up  # Note that it's eth1 because it's the NIC that's connected to internal_net
 
 8. Start (or restart) the DHCP server
