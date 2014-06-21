@@ -49,6 +49,7 @@ Fortunately, we can build a virtual router pretty quickly.
         sudo apt-get install dhcp3-server
 
 6. Add the following to `/etc/dhcp/dhcpd.conf`
+
         subnet 192.168.3.0 netmask 255.255.255.0 {
             range 192.168.3.100 192.168.1.110;
             option broadcast-address 192.168.3.255; ## broadcast
@@ -60,6 +61,7 @@ Fortunately, we can build a virtual router pretty quickly.
         ifconfig eth1 up 192.168.3.1 up  # Note that it's eth1 because it's the NIC that's connected to internal_net
 
 8. Start (or restart) the DHCP server
+
         service isc-dhcp-server start
 
 9. At this point, I connected a Metasploitable Linux machine to the `internal_net` network and did `dhclient` and 
