@@ -96,7 +96,8 @@ the host.  Honestly though, it's easier if you just configure your hosts to have
 9. At this point, try to start up a virtual machine with a network interface connected to the network `external_net` and make
 sure it can get an IP address via DHCP.
 
-10. Time to set up routing.  I wrote a script based on the Debian routing tutorial.  
+10. Time to set up routing.  I wrote a script based on the Debian routing tutorial.
+
         #!/bin/sh
 
         PATH=/usr/sbin:/sbin:/bin:/usr/bin
