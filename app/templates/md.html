@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<style type="text/css">
+    .container {
+        max-width: 70%;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+{{ md|safe }}
+{% endblock %}
